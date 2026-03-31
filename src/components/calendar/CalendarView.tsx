@@ -129,7 +129,7 @@ export default function CalendarView() {
       setForm(emptyForm)
       setSnackbar({ open: true, message: 'Conteúdo adicionado!', severity: 'success' })
     } catch (e: unknown) {
-      const message = e instanceof Error ? e.message : 'Erro ao salvar o conteúdo no calendário'
+      const message = e instanceof Error ? e.message : 'Erro ao salvar'
       setSnackbar({ open: true, message, severity: 'error' })
     } finally {
       setSaving(false)
